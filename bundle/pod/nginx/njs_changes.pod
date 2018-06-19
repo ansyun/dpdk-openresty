@@ -1,0 +1,849 @@
+=encoding utf-8
+
+
+=head1 Name
+
+
+njs_changes - njs Changes
+
+
+=head1 Changes with 0.2.0
+
+
+
+Release Date:
+3 Apr 2018
+
+
+
+
+
+
+=over
+
+
+
+
+=item *
+
+
+
+Feature:
+reporting njs version by CLI.
+
+
+
+
+
+=item *
+
+
+
+Feature:
+textual description for type converting exceptions.
+
+
+
+
+
+=item *
+
+Feature:
+C<setTimeout()> and
+C<clearTimeout()> methods.
+
+
+
+=item *
+
+
+
+Feature:
+Byte string to
+C<hex>,
+C<base64>,
+C<base64url> encodings.
+
+
+
+
+
+=item *
+
+
+
+Feature:
+L<Node.js style|https://nodejs.org/api/crypto.html#crypto_class_hash>
+C<Crypto> methods.
+
+
+
+
+
+=item *
+
+
+
+Feature:
+HTTP and stream
+C<warn()> and
+C<error()> methods.
+
+
+
+
+
+=item *
+
+
+
+Feature:
+HTTP C<subrequest()> method.
+
+
+
+
+
+=item *
+
+
+
+Feature:
+HTTP C<return()> method.
+
+
+
+
+
+=item *
+
+
+
+Bugfix:
+miscellaneous bugs have been fixed in the core and
+interactive shell.
+
+
+
+
+
+=back
+
+
+
+
+
+
+=head1 Changes with 0.1.15
+
+
+
+Release Date:
+20 Nov 2017
+
+
+
+
+
+
+=over
+
+
+
+
+=item *
+
+
+
+Feature:
+C<Error>,
+C<EvalError>,
+C<InternalError>,
+C<RangeError>,
+C<ReferenceError>,
+C<SyntaxError>,
+C<TypeError>,
+C<URIError> objects.
+
+
+
+
+
+=item *
+
+
+
+Feature:
+octal literals support.
+
+
+
+
+
+=item *
+
+
+
+Feature:
+L<Node.js style|https://nodejs.org/api/fs.html#fs_file_system>
+C<File system> access methods:
+C<fs.readFile()>,
+C<fs.readFileSync()>,
+C<fs.appendFile()>,
+C<fs.appendFileSync()>,
+C<fs.writeFile()>,
+C<fs.writeFileSync()>.
+
+
+
+
+
+=item *
+
+
+
+Feature:
+nginx modules print backtrace on exception.
+
+
+
+
+
+=item *
+
+
+
+Bugfix:
+miscellaneous bugs have been fixed.
+
+
+
+
+
+=back
+
+
+
+
+
+
+=head1 Changes with 0.1.14
+
+
+
+Release Date:
+09 Oct 2017
+
+
+
+
+
+
+=over
+
+
+
+
+=item *
+
+
+
+Feature:
+JSON object.
+
+
+
+
+
+=item *
+
+
+
+Feature:
+object level completions in interactive shell.
+
+
+
+
+
+=item *
+
+
+
+Feature:
+various configure improvements.
+
+
+
+
+
+=item *
+
+
+
+Bugfix:
+miscellaneous bugs have been fixed in the core and
+interactive shell.
+
+
+
+
+
+=back
+
+
+
+
+
+
+=head1 Changes with 0.1.13
+
+
+
+Release Date:
+31 Aug 2017
+
+
+
+
+
+
+=over
+
+
+
+
+=item *
+
+
+
+Feature:
+C<console.log()> and
+C<console.help()>
+methods in interactive shell.
+
+
+
+
+
+=item *
+
+
+
+Feature:
+interactive shell prints backtrace on exception.
+
+
+
+
+
+=item *
+
+
+
+Feature:
+interactive shell by default
+if C<libedit> is available.
+
+
+
+
+
+=item *
+
+
+
+Bugfix:
+processing of large files from
+C<stdin> in command line mode.
+
+
+
+
+
+=item *
+
+
+
+Bugfix:
+improved C<editline> detection.
+
+
+
+
+
+=back
+
+
+
+
+
+
+=head1 Changes with 0.1.12
+
+
+
+Release Date:
+08 Aug 2017
+
+
+
+
+
+
+=over
+
+
+
+
+=item *
+
+
+
+Feature:
+Interactive shell.
+
+
+
+
+
+=item *
+
+
+
+Bugfix:
+in C<Object.isSealed()>.
+
+
+
+
+
+=back
+
+
+
+
+
+
+=head1 Changes with 0.1.11
+
+
+
+Release Date:
+27 Jun 2017
+
+
+
+
+
+
+=over
+
+
+
+
+=item *
+
+
+
+Feature:
+C<Object.keys()>,
+C<Object.prototype.hasOwnProperty()>
+methods.
+
+
+
+
+
+=item *
+
+
+
+Feature:
+C<Object.defineProperty()>,
+C<Object.defineProperties()>,
+C<Object.getOwnPropertyDescriptor()>
+methods.
+
+
+
+
+
+=item *
+
+
+
+Feature:
+C<Object.getPrototypeOf()>,
+C<Object.prototype.isPrototypeOf()>
+methods.
+
+
+
+
+
+=item *
+
+
+
+Feature:
+C<Object.preventExtensions()>,
+C<Object.isExtensible()>,
+C<Object.freeze()>,
+C<Object.isFrozen()>,
+C<Object.seal()>,
+C<Object.isSealed()>
+methods.
+
+
+
+
+
+=item *
+
+
+
+Feature:
+scientific notation (C<3.35e10>) literals support.
+
+
+
+
+
+=item *
+
+
+
+Feature:
+hexadecimal (C<0x1123>) literals support.
+
+
+
+
+
+=item *
+
+
+
+Bugfix:
+processing of large array indexes.
+
+
+
+
+
+=item *
+
+
+
+Bugfix:
+in C<parseInt()> and
+C<Date.parse()>.
+
+
+
+
+
+=back
+
+
+
+
+
+
+=head1 Changes with 0.1.10
+
+
+
+Release Date:
+04 Apr 2017
+
+
+
+
+
+
+=over
+
+
+
+
+=item *
+
+
+
+Feature:
+nested functions and function closures.
+
+
+
+
+
+=item *
+
+
+
+Feature:
+C<Array.of()>,
+C<Array.prototype.fill()>,
+C<Array.prototype.find()>,
+C<Array.prototype.findIndex()>
+methods.
+
+
+
+
+
+=item *
+
+
+
+Bugfix:
+miscellaneous bugs and segmentation faults have been fixed.
+
+
+
+
+
+=back
+
+
+
+
+
+
+=head1 Changes with 0.1.9
+
+
+
+Release Date:
+01 Feb 2017
+
+
+
+
+
+
+=over
+
+
+
+
+=item *
+
+
+
+Bugfix:
+global variables were not initialized when njs was used
+in nginx.
+
+
+
+
+
+=back
+
+
+
+
+
+
+=head1 Changes with 0.1.8
+
+
+
+Release Date:
+24 Jan 2017
+
+
+
+
+
+
+=over
+
+
+
+
+=item *
+
+
+
+Change:
+the C<strict> mode is enforced,
+variables must be explicitly declared.
+
+
+
+
+
+
+=item *
+
+
+
+Feature:
+C<for> and
+C<for-in> loops support variable declaration.
+
+
+
+
+
+=item *
+
+
+
+Bugfix:
+global and function scopes have been fixed.
+
+
+
+
+
+=item *
+
+
+
+Bugfix:
+now C<for-in> loop does not discard the last value
+of property variable.
+
+
+
+
+
+=item *
+
+
+
+Bugfix:
+miscellaneous bugs and segmentation faults have been fixed.
+
+
+
+
+
+=back
+
+
+
+
+
+
+=head1 Changes with 0.1.7
+
+
+
+Release Date:
+27 Dec 2016
+
+
+
+
+
+
+=over
+
+
+
+
+=item *
+
+
+
+Change:
+the L<ngx_http_js_module> directive
+has been disabled at server and location levels.
+
+
+
+
+
+=item *
+
+
+
+Feature:
+exponentiation operators.
+
+
+
+
+
+=item *
+
+
+
+Bugfix:
+miscellaneous bugs and segmentation faults have been fixed.
+
+
+
+
+
+=back
+
+
+
+
+
+
+=head1 Changes with 0.1.6
+
+
+
+Release Date:
+13 Dec 2016
+
+
+
+
+
+
+=over
+
+
+
+
+=item *
+
+
+
+Change:
+the L<ngx_http_js_module> directive
+has been disabled at server and location levels.
+
+
+
+
+
+=item *
+
+
+
+Feature:
+ES6 C<Math> methods.
+
+
+
+
+
+=item *
+
+
+
+Bugfix:
+miscellaneous bugs and segmentation faults have been fixed.
+
+
+
+
+
+=back
+
+
+
+
+
+
